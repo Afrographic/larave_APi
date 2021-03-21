@@ -46,6 +46,7 @@ class UserController extends Controller
         return DB::table('employees')
             ->join('companies','employees.id','=','companies.employeeId')
             ->join('country','companies.id','=','country.company_id')
+            ->where('country.country_name',"Chine")
             ->get();
     }
 }
