@@ -22,6 +22,7 @@ Route::post('users',[UserController::class,'addMember']);
 Route::get('delete/{id}',[UserController::class,'delete']);
 Route::post('update/{id}',[UserController::class,'update']);
 Route::get("operations",[UserController::class,'operations']);
+Route::get("joins",[UserController::class,'joins']);
 
 
 
