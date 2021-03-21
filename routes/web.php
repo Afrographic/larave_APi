@@ -17,10 +17,11 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('users',[UserController::class,'addMember']);
 
+Route::post('users',[UserController::class,'addMember']);
 Route::get('delete/{id}',[UserController::class,'delete']);
 Route::post('update/{id}',[UserController::class,'update']);
+Route::get("operations",[UserController::class,'operations']);
 
 
 

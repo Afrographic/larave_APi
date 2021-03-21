@@ -35,4 +35,10 @@ class UserController extends Controller
         $user->save();
         return "You updated that thing!";
     }
+
+    function operations(){
+        // return DB::table("users")->min('id');
+        // return DB::table("users")->max('id');
+        return DB::table("users")->avg('id');
+    }
 }
