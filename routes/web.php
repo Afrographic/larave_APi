@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,9 @@ Route::get('delete/{id}',[UserController::class,'delete']);
 Route::post('update/{id}',[UserController::class,'update']);
 Route::get("operations",[UserController::class,'operations']);
 Route::get("joins",[UserController::class,'joins']);
+Route::get("access",[UserController::class,'accesors']);
+
+Route::get('relation',[EmployeeController::class,'get']);
 
 
 

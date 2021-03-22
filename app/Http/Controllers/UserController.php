@@ -49,4 +49,10 @@ class UserController extends Controller
             ->where('country.country_name',"Chine")
             ->get();
     }
+
+    function accesors(){
+        return User::all()->getCompany;
+    }
+
+   
 }
